@@ -101,3 +101,167 @@ Si dos ramas tienen cambios en la misma línea del mismo archivo, Git generará 
 #### Pull requests
 
 En GitHub, puedes solicitar que tus cambios sean revisados y fusionados en la rama principal mediante una Pull Request.
+
+## Conceptos y comandos para utilizar docker
+
+### Ejecutar un contenedor
+
+```bash
+docker run -d -p 80:80 nginx
+```
+
+```
+-d: Ejecuta el contenedor en segundo plano (detached mode).
+-p 80:80: Publica el puerto 80 del contenedor en el puerto 80 del host.
+```
+
+### Construir una imagen
+
+```bash
+docker build -t my_image .
+```
+
+```
+-t my_image: Asigna una etiqueta (nombre) a la imágen creada.
+```
+
+### Descargar una imágen
+
+Descarga la imagen especificada desde Docker Hub.
+
+```bash
+docker pull ubuntu
+```
+
+### Listar contenedores en ejecución
+
+Muestra los contenedores en ejecución.
+
+```bash
+docker ps
+```
+
+### Listar todos los contenedores
+
+```bash
+docker ps -a
+```
+
+```
+-a: Muestra todos los contenedores, tanto en ejecución como detenidos
+```
+
+### Listar imágenes
+
+Lista todas las imágenes almacenadas localmente.
+
+```bash
+docker images
+```
+
+### Eliminar una imagen
+
+Elimina la imágen especificada
+
+```bash
+docker rmi my_image
+```
+
+### Eliminar un contenedor
+
+Elimina el contenedor especificado
+
+```bash
+docker rm my_container
+```
+
+### Ejecutar un comando en un contenedor en ejecución
+
+```bash
+docker exec -it my_container bash
+```
+
+```
+-i: Modo interactivo.
+-t: Asigna una terminal (tty).
+```
+
+### Detener un contenedor
+
+Detiene el contenedor en ejecución.
+
+```bash
+docker stop my_container
+```
+
+### Iniciar un contenedor detenido
+
+Inicia el contenedor detenido
+
+```bash
+docker start my_container
+```
+
+### Ver logs de un contenedor
+
+Muestra los logs del contenedor especificado.
+
+```bash
+docker stop my_container
+```
+
+### Crear una red
+
+Crea una nueva red para contenedores
+
+```bash
+docker network create my_network
+```
+
+### Iniciar servicios con Docker Compose
+
+Inicia los servicios definidos en el archivo `docker-compose.yml`.
+
+```bash
+docker-compose up
+```
+
+### Detener y eliminar servicios con Docker Compose
+
+Detiene y elimina los contenedores, redes, volúmenes e imágenes creados por `docker-compose up`.
+
+```bash
+docker-compose down
+```
+
+### Crear un volumen
+
+Crea un nuevo volmen
+
+```bash
+docker volume create my_volume
+```
+
+### Listar volúmenes
+
+Lista todos los volúmenes
+
+```bash
+docker volume ls
+```
+
+### Eliminar un volumen
+
+Elimina el volumen especificado
+
+```bash
+docker volume rm my_volume
+```
+
+### Inspeccionar un contenedo, imágen o volúmen
+
+Muestra información detallada sobre el contenedor, imagen, red o volumen especificado.
+
+```bash
+docker inspect my_container
+```
