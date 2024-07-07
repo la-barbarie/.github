@@ -13,6 +13,18 @@
      - [Push](#push)
      - [Merge](#merge)
    - [Consejos para trabajar con Git/GitHub en equipo](#consejos-para-trabajar-con-gitgithub-en-equipo)
+3. [Conceptos y comandos para utilizar docker](#conceptos-y-comandos-para-utilizar-docker)
+   - [Ejecutar un contenedor](ejecutar-un-contenedor)
+   - [Ejecutar un comando en un contenedor en ejecución](ejecutar-un-comando-en-un-contenedor-en-ejecución)
+   - [Detener un contenedor](detener-un-contenedor)
+   - [Iniciar un contenedor](iniciar-un-contenedor)
+   - [Ver logs de un contenedor](ver-logs-de-un-contenedor)
+   - [Crear una red](crear-una-red)
+   - [Iniciar servicios con Docker Compose](iniciar-servicios-con-docker-compose)
+   - [Crear un volumen](crear-un-volumen)
+   - [Listar volúmenes](listar-volúmenes)
+   - [Eliminar un volumen](eliminar-un-volumen)
+   - [Inspeccionar un contenedo, imágen o volúmen](inspeccionar-un-contenedo-imágen-o-volúmen)
 
 ## Repositorios en La barbarie
 
@@ -103,6 +115,8 @@ Si dos ramas tienen cambios en la misma línea del mismo archivo, Git generará 
 En GitHub, puedes solicitar que tus cambios sean revisados y fusionados en la rama principal mediante una Pull Request.
 
 ## Conceptos y comandos para utilizar docker
+
+Los siguientes puntos hacen referencia a una herramienta de contenedores llamada Docker. Se utiliza principalmente para el despliegue independiente de apliaciones a través de una máquina virtual que utiliza Linux. Si no saben utilizar docker, acá se detallan algunos de los comandos esenciales que hay que saber al momento de utilizarlo.
 
 ### Ejecutar un contenedor
 
